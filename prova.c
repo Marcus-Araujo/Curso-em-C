@@ -18,7 +18,19 @@
      printf ("suas notas são: %f, %f, %f \n", nota1, nota2, nota3);
      soma = (nota1 + nota2 + nota3);
      media = (soma/provas);
-     printf ("sua média é de %f \n", media);
+     printf ("Sua média foi %f", media);
+
+     if (media >= 7.0) {
+         printf ("voce foi aprovado!");
+     } else {
+         if (media >= 5.0) {
+             printf ("voce está na final");
+        }
+             else {
+                 printf ("vc está reprovado");
+
+             }
+     }
 
 
     return 0; 
