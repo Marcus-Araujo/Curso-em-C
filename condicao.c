@@ -9,9 +9,11 @@ int main( ) {
     scanf ("%d", &numero);
 
     if ((numero%5) == 0) {
-        printf ("Seu número é divisível por 5\n");
-        }if ((numero%3) == 0) {
-            printf (" Seu número é divisível por 3 \n");
+        if ((numero%3) == 0) {
+            printf (" Seu número é divisível por 3 e por 5\n");
+        }else { 
+            printf ("seu número não é divisível por 3\n");
+            }
         }
      else {
             printf (" Seu número não é divisível por 3 nem por 5 \n");
