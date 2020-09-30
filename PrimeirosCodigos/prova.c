@@ -8,6 +8,7 @@
      float media;
      float soma;
      int provas = 3;
+     int nFaltas;
     
      printf ("insira nota da primeira prova:  ");
      scanf ("%f", &nota1);
@@ -15,19 +16,21 @@
      scanf ("%f", &nota2);
      printf ("insira a terceira nota: ");
      scanf("%f", &nota3);
+     printf ("Insira suas faltas: ");
+     scanf("%d", &nFaltas);
      printf ("suas notas são: %f, %f, %f \n", nota1, nota2, nota3);
      soma = (nota1 + nota2 + nota3);
      media = (soma/provas);
      printf ("Sua média foi %f", media);
 
-     if (media >= 7.0) {
+     if ((media >= 7.0) && (nFaltas<12)) {
          printf ("voce foi aprovado!");
      } else {
-         if (media >= 5.0) {
-             printf ("voce está na final");
+         if ((media < 5.0)|| (nFaltas >= 12)) {
+             printf ("vc está reprovado");
         }
              else {
-                 printf ("vc está reprovado");
+                 printf ("voce está na final");
 
              }
      }
